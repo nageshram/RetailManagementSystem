@@ -1,0 +1,193 @@
+ html
+{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.message{
+    padding: 10px auto;
+    margin: 5px auto;
+    border:none;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    position: absolute;
+    left: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    box-shadow:  2px 2px 5px 1px rgb(122, 115, 115);
+    z-index: 50;
+    background-color: white;
+  }
+  .message >*{
+    margin:10px;
+    font-size: 19px;
+    font-weight: 500;
+  
+  }
+body::before{
+    content: " ";
+   /* background-image: linear-gradient(100deg,rgba(238, 244, 246, 0.205),rgb(11, 53, 82));
+   */  background-color: none; 
+   top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: -1;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+input:focus{
+    outline: none;
+}
+body{
+    background-image:url(/neuStore_u/neustore_user/assets/images/banner/osman-rana-GXEZuWo5m4I-unsplash.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    z-index: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+} 
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+} 
+.form-area{
+    margin:5vh auto;
+    justify-content: center;
+    font-size: 1.8rem;
+    max-width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box1{
+    min-width: 340px;
+}
+@media only screen and (min-width:100px) and (max-width:350px) {
+    html{
+        font-size: 8px;
+    }
+    .box1{
+        min-width: 250px;
+    }
+    /*.container{
+        margin-left: 8vw;
+        height: 100vh;
+    }*/
+
+}
+
+
+#header{
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    color: aliceblue;
+}
+#title{
+    font-size: 3rem;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+label,span{
+    font-size: 1.8rem;
+    margin: 10rem 0;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+.signin input::placeholder{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 20px;
+    color: rgb(4, 0, 0);
+}
+
+input{
+    width: 100%;
+    font-size: 1.8rem;
+    min-height: 3.3rem;
+    height: auto;
+   background-color: rgba(234, 223, 223, 0.014);
+    border-radius: 1px;
+    border: none;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+     
+}
+.in{
+    border-bottom: 2px solid rgba(90, 74, 74, 0.507);
+}
+.in::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease-in-out;
+    display: block;
+    background: black;
+    position: relative;
+    top: 5px;
+}
+.in::after:hover{
+    color: rgb(196, 75, 24);
+    width: 100%;
+}
+
+.submit{
+       background-color: rgb(66, 120, 170);
+       font-size: 20px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       color: bisque; 
+    }
+.submit:hover{
+    background-color: rgba(68, 70, 72, 0);
+    border: 2px solid rgb(23, 29, 11);
+}
+  
+    form{
+        padding: 2rem;
+        background-color: rgba(222, 215, 215, 0.665);
+        margin: 0 5vh;
+        border-radius: 3%;
+    
+    }
+ .signin{
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     padding: 10px 10px;
+     font-size: 1.8rem;
+ } 
+ a:hover{
+     color:rgb(20, 18, 13);
+ }
+ .down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+.down a{
+    font-size: 1.8rem;
+    color: rgb(70, 40, 68);
+}
+.down a:hover{
+    color: white;
+    background-color: rgba(88, 86, 86, 0.155);
+}
